@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_RSRC</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>DB class for: Resource</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_ADDATA_RSRC</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Additional Data from Resource</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_QUEUE_ON_RSGRP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get queue from resource group</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_RSGRP_QUEUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get queues defined for resource group</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ST_RSGRP_QUEUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sequenced Queues Per Resource Group</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ST_RSRC_TYPE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Additional Data Resource Type</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADDATA_RSRC</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADDATA_RSRC</CMPNAME>
+     <SCONAME>IV_RSRC_TYPE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Resource Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADDATA_RSRC</CMPNAME>
+     <SCONAME>RS_RSRC_TYP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Additional Data to Resource Types</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_ADDATA_RSRC</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_QUEUE_ON_RSGRP</CMPNAME>
+     <SCONAME>ES_TRSGR_Q_SQ</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sequenced Queues Per Resource Group</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_QUEUE_ON_RSGRP</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_QUEUE_ON_RSGRP</CMPNAME>
+     <SCONAME>IV_QUEUE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Queue</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_QUEUE_ON_RSGRP</CMPNAME>
+     <SCONAME>IV_RSRC_GRP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Resource Group</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RSGRP_QUEUE</CMPNAME>
+     <SCONAME>ET_RSGRP_QUEUE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Sequenced Queues Per Resource Group</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RSGRP_QUEUE</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RSGRP_QUEUE</CMPNAME>
+     <SCONAME>IV_RSRC_GRP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Resource Group</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_PMAT_STG</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Class for Table of Packing Material in STG</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Table</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ET_PMAT_STG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SELECT-OPTIONS Table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IM_PMAT_RECEP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (X=true, -=false, space=unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IT_PMAT_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SELECT-OPTIONS Table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IT_STG_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SELECT-OPTIONS Table</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

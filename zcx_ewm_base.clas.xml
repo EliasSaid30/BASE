@@ -1,0 +1,202 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCX_EWM_BASE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    <CATEGORY>40</CATEGORY>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+    <MSG_ID>ZEWM_BASE</MSG_ID>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>BAPIRET_ADD_SYST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ADD SY message to BAPI return table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>BAPIRET_RAISE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise error message in return table as exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise delivery message as exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns the raised exception object</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TEXT_PREVIOUS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Returns message short text of the previous exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_DOMVAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Valores para dominios, valor individual/límite inferior</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_MESSAGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Mensaje</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>IS_ERROR_SEVERITY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CHECK If processing of a SAP function failed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LOG_RAISE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise error message of the application log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>STRING_RAISE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise string as exception</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SYST_RAISE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Raise SY message as exception</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>BAPIRET_ADD_SYST</CMPNAME>
+     <SCONAME>CT_BAPIRET</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table with BAPI Return Information</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>BAPIRET_RAISE</CMPNAME>
+     <SCONAME>IT_BAPIRET</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table with BAPI Return Information</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>BAPIRET_RAISE</CMPNAME>
+     <SCONAME>IV_SEVERITY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message type: S Success, E Error, W Warning, I Info, A Abort</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>BAPIRET_RAISE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IR_CX_DLV</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>For New Exceptions Use /SCDL/CX_DELIVERY_T100</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IR_DM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delivery Messages</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IT_MESSAGES</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of Messages</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IV_DOCCAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Document Category</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IV_DOCID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Document ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IV_HUID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handling Unit ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IV_ITEMID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Item ID</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>IV_LOGFNAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Logical Field Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DM_RAISE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MESSAGE</CMPNAME>
+     <SCONAME>RR_CX_MESSAGE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Interface for Accessing T100 Texts</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>IS_ERROR_SEVERITY</CMPNAME>
+     <SCONAME>IV_SEVERITY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message type: S Success, E Error, W Warning, I Info, A Abort</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>IS_ERROR_SEVERITY</CMPNAME>
+     <SCONAME>RV_ERROR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (X=true, -=false, space=unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG_RAISE</CMPNAME>
+     <SCONAME>IR_LOG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Log</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>LOG_RAISE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>STRING_RAISE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SYST_RAISE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

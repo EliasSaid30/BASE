@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_PMAT</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Packing material</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_RANGE_PMAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET range from Packing Material</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HUNRIV_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read HU Range Number</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HUNR_READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read HU Range Number Assigment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ST_HUNR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number Range Intervals</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>ST_NRIV</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number range intervals</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RANGE_PMAT</CMPNAME>
+     <SCONAME>ES_NRIV</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number Range Intervals</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RANGE_PMAT</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RANGE_PMAT</CMPNAME>
+     <SCONAME>IV_PMAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Packaging Material</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RANGE_PMAT</CMPNAME>
+     <SCONAME>IV_PMATID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_RANGE_PMAT</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNRIV_READ</CMPNAME>
+     <SCONAME>ES_NRIV</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number Range Intervals</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNRIV_READ</CMPNAME>
+     <SCONAME>IV_INT_NR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number Range Interval for Internal Number Assignment</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNRIV_READ</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNRIV_READ</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNR_READ</CMPNAME>
+     <SCONAME>EV_INT_NR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number Range Interval for Internal Number Assignment</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNR_READ</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNR_READ</CMPNAME>
+     <SCONAME>IV_PMTYP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Packaging Material Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HUNR_READ</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

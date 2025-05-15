@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Basic Functions</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_TM_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET Transaction Manager Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RANGE_APPEND_BT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONVERT select-option to range table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RANGE_APPEND_CP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONVERT select-option to range table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RANGE_APPEND_EQ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONVERT select-option to range table</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>RANGE_CONVERT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Register application object for global cleanup (/SCWM/CL_TM)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>REGISTER_CLEANUP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ADD &apos;EQ&apos; value to a range table</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_TM_INSTANCE</CMPNAME>
+     <SCONAME>RR_TM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transaction Manager for LUW in WM</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RANGE_APPEND_BT</CMPNAME>
+     <SCONAME>IV_EXCLUDE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RANGE_APPEND_CP</CMPNAME>
+     <SCONAME>IV_EXCLUDE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>RANGE_APPEND_EQ</CMPNAME>
+     <SCONAME>IV_EXCLUDE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>REGISTER_CLEANUP</CMPNAME>
+     <SCONAME>IR_APPLICATION</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>EWM Transaction Manager - Application Adapter</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

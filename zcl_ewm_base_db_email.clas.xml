@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_EMAIL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Base mail class</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CHECK_DLIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read Distribution list</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_HTM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Code for document class</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GS_ATTACHMENTS</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure for Email Attachment</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LR_DOCUMENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Wrapper Class for Office Documents</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LR_RECIPIENT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Interface of Recipient Object in BCS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LR_SENDER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Interface of Sender Object in BCS</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>LR_SEND_EMAIL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Communication Service</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Send E-mail by Distribution List</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_BODY_FORMAT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set format for message body</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_DLIST</CMPNAME>
+     <SCONAME>IV_DIST_LIST</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_DLIST</CMPNAME>
+     <SCONAME>IV_SYSTEM_DLI</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Text field length 1</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CHECK_DLIST</CMPNAME>
+     <SCONAME>RV_ERROR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (X=true, -=false, space=unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>ERROR_EMAIL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Error while creating E-mail</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>IT_ATTACHMENTS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (X=true, -=false, space=unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>IT_BODY_MESSAGE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Objcont and Objhead as Table Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>IV_COMMIT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (X=true, -=false, space=unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>IV_DEFAULT_FORMAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean Variable (X=true, -=false, space=unknown)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>IV_DIST_LIST</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Name of document, folder or distribution list</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>IV_SUBJECT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Short description of contents</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>IV_SYSTEM_DLI</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Text field length 1</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>NO_DIST_LIST</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>No distribution list found</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SEND_MAIL_BY_DLIST</CMPNAME>
+     <SCONAME>RV_SENT_TO_ALL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Boolean</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_BODY_FORMAT</CMPNAME>
+     <SCONAME>IT_BODY_MESSAGE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Objcont and Objhead as Table Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_BODY_FORMAT</CMPNAME>
+     <SCONAME>RT_BODY_MESSAGE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Objcont and Objhead as Table Type</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

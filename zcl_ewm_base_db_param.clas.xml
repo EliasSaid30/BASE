@@ -1,0 +1,384 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_PARAM</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>DB Class for: Parameters</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIL_DYN_FILTER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>FILTER parameter values by enhancement relevance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIL_ENHAN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>FILTER parameter values by enhancement relevance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>FIL_KEYNAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>FILTER parameter values by key name</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET parameter value (all attributes)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_FIELDNAME</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET Fieldname for parameter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET parameter values (all attributes)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MULTI_RANGE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET parameter values on Range</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SINGLETON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET singleton instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET parameter value</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_ENHAN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameter Key - Enhancement</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_FILENH</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dynamic Filter Enhancements</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_PKEY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameter Key</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_VAL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_WHSE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Values</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_DFLT_ENHAN</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Enhancements</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LGNUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>READ all parameter definitions</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SR_PARAM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>DB Class for: Parameters</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIL_DYN_FILTER</CMPNAME>
+     <SCONAME>CT_VAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Values</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIL_DYN_FILTER</CMPNAME>
+     <SCONAME>IV_DYN_FILTER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Dynamic Filter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIL_ENHAN</CMPNAME>
+     <SCONAME>CT_VAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Values</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIL_ENHAN</CMPNAME>
+     <SCONAME>IV_ENHAN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Enhancements</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIL_KEYNAM</CMPNAME>
+     <SCONAME>CT_VAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Values</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>FIL_KEYNAM</CMPNAME>
+     <SCONAME>IV_KEYNAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ES_VALUE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Value Activation Key</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_DYN_FILTER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Dynamic Filter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_ENHAN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Enhancements</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_IGNORE_MULTI</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_KEYNAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FIELDNAME</CMPNAME>
+     <SCONAME>EV_FIELDNAME</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FIELDNAME</CMPNAME>
+     <SCONAME>IS_KEYATT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Flags for Return Values on Parameters</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FIELDNAME</CMPNAME>
+     <SCONAME>IV_IGNORE_MULTI</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FIELDNAME</CMPNAME>
+     <SCONAME>IV_KEYNAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_FIELDNAME</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_ENHAN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Enhancements</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>RR_PARAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>DB Class for: Parameters</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>ET_VALUES</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Values</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>IV_DYN_FILTER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Dynamic Filter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>IV_ENHAN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Enhancements</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>IV_KEYNAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI_RANGE</CMPNAME>
+     <SCONAME>IS_KEYATT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Flags for Return Values on Parameters</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI_RANGE</CMPNAME>
+     <SCONAME>IV_DYN_FILTER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Dynamic Filter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI_RANGE</CMPNAME>
+     <SCONAME>IV_ENHAN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Enhancements</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI_RANGE</CMPNAME>
+     <SCONAME>IV_EXCLUDE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI_RANGE</CMPNAME>
+     <SCONAME>IV_KEYNAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI_RANGE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SINGLETON</CMPNAME>
+     <SCONAME>RR_SINGLETON</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>DB Class for: Parameters</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <SCONAME>IS_KEYATT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Flags for Return Values on Parameters</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <SCONAME>IV_DYN_FILTER</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Dynamic Filter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <SCONAME>IV_ENHAN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Enhancements</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <SCONAME>IV_IGNORE_MULTI</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <SCONAME>IV_KEYNAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_VALUE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ET_ENHAN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameter Key - Enhancement</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ET_FILENH</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Dynamic Filter Enhancements</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ET_PKEY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameter Key</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ET_PWHSE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Key per Warehouse</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ET_VAL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type Parameters Values</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

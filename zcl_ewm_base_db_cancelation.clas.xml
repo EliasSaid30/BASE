@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_CANCELATION</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Functionality of Cancelation per HU</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Add current message to Prot</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CANCEL_PICKING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Cancel picking per HU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CANCEL_WT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Cancel warehouse tasks per HU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Constructor</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get instance for Cancelation</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GR_ADAPTER_HDL</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adapter for SCMB Attribute Handler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GR_CANCPICK_SP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Service Provider: Reversal of Picking</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GR_PROT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Log</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_CURR_ROW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Lines in parameter</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_LGNUM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Comp</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize current instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>PREPARE_CANCEL_PICKING</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set needed defaults for cancel picking</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_HANDLER</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set message and attribute handler</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SR_SINGLETON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Functionality of Cancelation per HU</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_FIELD</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Field in parameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Text</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSGID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Class</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSGNO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Number</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSGTY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSGV1</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSGV2</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSGV3</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_MSGV4</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Variable</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_PARAM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Parameter Name</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_MSG_TO_PROT</CMPNAME>
+     <SCONAME>IV_ROW</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Lines in parameter</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CANCEL_PICKING</CMPNAME>
+     <SCONAME>EV_REJECTED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CANCEL_PICKING</CMPNAME>
+     <SCONAME>IS_HU_CANCEL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Structure for Processing HU Headers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CANCEL_PICKING</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>RR_INSTANCE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Functionality of Cancelation per HU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_HANDLER</CMPNAME>
+     <SCONAME>IR_ADAPTER_HDL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Adapter for SCMB Attribute Handler</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

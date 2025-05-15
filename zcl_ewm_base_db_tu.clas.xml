@@ -1,0 +1,996 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_TU</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>DB class for: Transportation Unit</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Assign a Handling Unit to a Transportation Unit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create a transportation unit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unassign a Handling Unit from a Transport Unit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET Transport Unit Activity</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET &quot;Guia de Despacho&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET Multiple &quot;Guia de Despacho&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_SR_BOM_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET S&amp;R Business Object Manager Instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>READ Transport Unit Activity</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_DLV_DB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>READ Deliveries which are assigned to a TU from DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_DLV_HU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>READ Handling Units which are assigned to a TU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_DLV_HU_DB</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>READ Handling Units which are assigned to a TU from DB</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>READ &quot;Guia de Despacho&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>READ Transport Unit Activities</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>PREP Transport Unit Activities query</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_GUIA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SET &quot;Guia de Despacho&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_GUIA_MULTI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>SET Multple &quot;Guia de Despacho&quot;</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_STATUS_ARR_AT_CHK_POINT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set TU status - Arrival at checkpoint</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_STATUS_DEP_FROM_CHK_POINT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set TU status - Departure from checkpoint</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_STATUS_GI_TU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set TU status - Good Issue of TU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SET_STATUS_LOADING_FINISHED</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Set TU status - Loading finished</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IR_SR_BOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object Manager: Shipping and Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IR_SR_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_COMMIT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Confirm with &quot;COMMIT WORK AND WAIT&quot;?</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_DIRECT_ASGN_ONLY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_GUID_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_HUIDENT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handling Unit Identification</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_SAVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_SKIP_DLV_SAVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>IV_SKIP_SYNCH</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>ADD_HU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>ER_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>ES_BO_TU_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data for Business Object: Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IR_SR_BOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object Manager: Shipping and Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_ACT_DIR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Direction of Shipping and Receiving Activity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_COMMIT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Confirm with &quot;COMMIT WORK AND WAIT&quot;?</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_END_PLAN_TSTFR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Start Time Stamp for Planned End of S&amp;R Activity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_END_PLAN_TSTTO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>End Time Stamp for Planned End of S&amp;R Activity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_IDART1</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Identification Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_MTR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Means of Transport</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_PMAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Packaging Material</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_ROUTE_ID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Route Name (Identification)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_SAVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_START_PLAN_TSTFR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Start Time Stamp for Planned Start of S&amp;R Activity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>IV_START_PLAN_TSTTO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>End Time Stamp for Planned Start of S&amp;R Activity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CREATE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IR_SR_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IR_SR_TUDLV</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>assignment of DLV to TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IS_TU_ACT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number of an S&amp;R Activity of a TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IV_CHECK_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IV_CLEANUP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IV_COMMIT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Confirm with &quot;COMMIT WORK AND WAIT&quot;?</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IV_DIRECT_ASGN_ONLY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IV_DOCCAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Document Category</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IV_GUID_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>IV_SAVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>DEL_HU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ER_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ES_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object of a Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ES_BO_TU_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data for Business Object: Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IR_SR_BOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object Manager: Shipping and Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_ACTIVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_EXECUTED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_INVALID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_PLANNED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_TU_ACT_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Shipping and Receiving Activity Number: Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_TU_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Number of Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_TU_NUM_EXT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <SCONAME>ET_TU_GUIAS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: Office Guide for TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <SCONAME>IV_ERP_DOCNO</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delivery</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <SCONAME>IV_GUIA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Guia de Despacho</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <SCONAME>IV_ID_GUIA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ID &quot;Guia Despacho&quot;</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <SCONAME>IV_TU_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Number of Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <SCONAME>ET_TU_GUIAS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: Office Guide for TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <SCONAME>IT_ERP_DOCNO_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: ERP Doc. Number Range</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <SCONAME>IT_GUIDE_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: for Office Guide</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <SCONAME>IT_SEQ_NUM_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type:  Sequence Numbre Range</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <SCONAME>IT_TU_NUM_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Range Table Type for Jump to Tx /scwm/ymove</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_GUIA_MULTI</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SR_BOM_INSTANCE</CMPNAME>
+     <SCONAME>IR_LOG</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Log</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SR_BOM_INSTANCE</CMPNAME>
+     <SCONAME>IV_CALL_MODE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Call Type for Business Object Manager for S&amp;R Activity</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SR_BOM_INSTANCE</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SR_BOM_INSTANCE</CMPNAME>
+     <SCONAME>IV_REFRESH</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_SR_BOM_INSTANCE</CMPNAME>
+     <SCONAME>RR_SR_BOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object Manager: Shipping and Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ER_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ES_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object of a Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ES_BO_TU_DATA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data for Business Object: Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IR_SR_BOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object Manager: Shipping and Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_ACTIVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_EXECUTED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_INVALID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_PLANNED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_TU_ACT_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Shipping and Receiving Activity Number: Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_TU_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Number of Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_TU_NUM_EXT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_DB</CMPNAME>
+     <SCONAME>ET_TU_DLV_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deliveries and HUs of Transportation Units</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_DB</CMPNAME>
+     <SCONAME>IS_TU_ACT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number of an S&amp;R Activity of a TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_DB</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU</CMPNAME>
+     <SCONAME>ET_BO_TU_DLV_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Assignments of Deliveries/HUs to TUs</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU</CMPNAME>
+     <SCONAME>IR_SR_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU</CMPNAME>
+     <SCONAME>IR_SR_TUDLV</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>assignment of DLV to TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU</CMPNAME>
+     <SCONAME>IV_DIRECT_ASGN_ONLY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU_DB</CMPNAME>
+     <SCONAME>ET_TU_DLV_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Deliveries and HUs of Transportation Units</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU_DB</CMPNAME>
+     <SCONAME>IS_TU_ACT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Number of an S&amp;R Activity of a TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_DLV_HU_DB</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <SCONAME>IT_ERP_DOCNO_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: ERP Doc. Number Range</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <SCONAME>IT_GUIDE_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: for Office Guide</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <SCONAME>IT_SEQ_NUM_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type:  Sequence Numbre Range</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <SCONAME>IT_TU_NUM_R</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Range Table Type for Jump to Tx /scwm/ymove</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <SCONAME>RT_TU_GUIAS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: Office Guide for TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_GUIA</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>ET_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of Business Objects for a Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IR_SR_BOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object Manager: Shipping and Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_ACTIVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_EXECUTED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_INVALID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_PLANNED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_TU_ACT_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Shipping and Receiving Activity Number: Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_TU_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Number of Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>IV_TU_NUM_EXT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>ER_TU_QUERY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for Searches in Shipping/Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>ES_QUERY_EXCL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Exclusion Criteria of Selection in S&amp;R</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IR_SR_BOM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object Manager: Shipping and Receiving</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IV_ACTIVE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IV_EXECUTED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IV_INVALID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IV_PLANNED</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IV_TU_ACT_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Shipping and Receiving Activity Number: Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IV_TU_NUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Number of Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>IV_TU_NUM_EXT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ_MULTI_SEL_PREP</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_GUIA</CMPNAME>
+     <SCONAME>IS_TU_GUIA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table TU for Guide</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_GUIA</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_GUIA_MULTI</CMPNAME>
+     <SCONAME>IT_TU_GUIAS</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table Type: Office Guide for TU</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_GUIA_MULTI</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_ARR_AT_CHK_POINT</CMPNAME>
+     <SCONAME>IR_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_ARR_AT_CHK_POINT</CMPNAME>
+     <SCONAME>IV_CHKPT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkpoint in Yard</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_ARR_AT_CHK_POINT</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_ARR_AT_CHK_POINT</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_DEP_FROM_CHK_POINT</CMPNAME>
+     <SCONAME>IR_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_DEP_FROM_CHK_POINT</CMPNAME>
+     <SCONAME>IV_CHKPT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkpoint in Yard</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_DEP_FROM_CHK_POINT</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_DEP_FROM_CHK_POINT</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_GI_TU</CMPNAME>
+     <SCONAME>CV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_GI_TU</CMPNAME>
+     <SCONAME>ET_BO_TU_DLV_GM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Assignments of Deliveries/HUs to TUs</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_GI_TU</CMPNAME>
+     <SCONAME>IR_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_GI_TU</CMPNAME>
+     <SCONAME>IV_CHECK_ONLY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_GI_TU</CMPNAME>
+     <SCONAME>IV_SKIP_GM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_GI_TU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_LOADING_FINISHED</CMPNAME>
+     <SCONAME>IR_BO_TU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Business Object for Transportation Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_LOADING_FINISHED</CMPNAME>
+     <SCONAME>IV_ACTION_ONLY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_LOADING_FINISHED</CMPNAME>
+     <SCONAME>IV_CHECK_ONLY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Data element for domain BOOLE: TRUE (=&apos;X&apos;) and FALSE (=&apos; &apos;)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_LOADING_FINISHED</CMPNAME>
+     <SCONAME>IV_REASON</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reason for Status in S&amp;R</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SET_STATUS_LOADING_FINISHED</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

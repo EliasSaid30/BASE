@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_T333B</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>DB Class for: Process Category</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET single process category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET instance</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET multiple process category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GT_TRART</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type. Process category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>READ</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Read all process category</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SR_T333B</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>DB Class for: Process Category</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_LANGU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Language Key of Text Environment</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>IV_TRART</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Process Category</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>RS_T333B</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Texts for Warehouse Process Categories</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_INSTANCE</CMPNAME>
+     <SCONAME>RR_T333B</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>DB Class for: Process Category</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>IT_TRART</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selection: Warehouse Process Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>IV_LANGU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Language Key of Text Environment</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>RT_T333B</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type. Process category</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_MULTI</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IT_TRART</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Selection: Warehouse Process Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>IV_LANGU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>ABAP System Field: Language Key of Text Environment</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>RT_T333B</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table type. Process category</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>READ</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

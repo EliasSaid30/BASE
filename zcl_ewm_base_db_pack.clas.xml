@@ -1,0 +1,319 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_PACK</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>DB class for: Packing in warehouse</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>AFTER_SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Things That Need to be Done After the Save</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CLEANUP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clear global static buffers</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CLOSE_HU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Close HU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CONSTRUCTOR</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>CONSTRUCTOR</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>EMPTY_HU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Empty HU/Repack complete HU</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HU_CREATE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Create Handling Unit</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HU_INTO_HU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Pack one HU into another</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HU_REPACK_TO_HU</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Repack Stock from One HU to Another</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>HU_REPACK_TO_LGPLA</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Repack Stock from HU to storage bin</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INIT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Initialize wm packing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>INIT_PACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Init packing</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SAVE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Save</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>SR_PACK</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Packing in WM with Immediately Confirmed Transfer Orders</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CLEANUP</CMPNAME>
+     <SCONAME>IR_WM_PACKING</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Packing in WM with Immediately Confirmed Transfer Orders</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CLOSE_HU</CMPNAME>
+     <SCONAME>IV_GUID_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CLOSE_HU</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CLOSE_HU</CMPNAME>
+     <SCONAME>IV_WRK_STN</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Work Center</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>CLOSE_HU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EMPTY_HU</CMPNAME>
+     <SCONAME>IV_DEST_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EMPTY_HU</CMPNAME>
+     <SCONAME>IV_DEST_LGPLA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Storage Bin</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EMPTY_HU</CMPNAME>
+     <SCONAME>IV_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>EMPTY_HU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_CREATE</CMPNAME>
+     <SCONAME>ES_HUHDR</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Internal Structure for Processing HU Headers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_CREATE</CMPNAME>
+     <SCONAME>IS_HU_CREATE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure for Creating HU Headers</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_CREATE</CMPNAME>
+     <SCONAME>IV_HUIDENT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handling Unit Identification</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_CREATE</CMPNAME>
+     <SCONAME>IV_LGPLA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Storage Bin</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_CREATE</CMPNAME>
+     <SCONAME>IV_PMAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_CREATE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_INTO_HU</CMPNAME>
+     <SCONAME>IV_HU_DEST</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_INTO_HU</CMPNAME>
+     <SCONAME>IV_HU_SOURCE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_INTO_HU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_HU</CMPNAME>
+     <SCONAME>ES_QUANTITY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Quantity Structure</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_HU</CMPNAME>
+     <SCONAME>IS_QUANTITY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Quantity Structure</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_HU</CMPNAME>
+     <SCONAME>IV_DEST_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_HU</CMPNAME>
+     <SCONAME>IV_SOURCE_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_HU</CMPNAME>
+     <SCONAME>IV_STOCK_GUID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GUID Stock Item</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_HU</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Clase de excepciones: Desarrollos Base</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_LGPLA</CMPNAME>
+     <SCONAME>ES_QUANTITY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Quantity Structure</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_LGPLA</CMPNAME>
+     <SCONAME>IS_QUANTITY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Quantity Structure</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_LGPLA</CMPNAME>
+     <SCONAME>IV_DEST_LGPLA</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Storage Bin</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_LGPLA</CMPNAME>
+     <SCONAME>IV_SOURCE_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal Identification of a Handling Unit</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_LGPLA</CMPNAME>
+     <SCONAME>IV_STOCK_GUID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GUID Stock Item</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>HU_REPACK_TO_LGPLA</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT</CMPNAME>
+     <SCONAME>IS_PACK_CONTROLE</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Structure with Fields for Packing Control</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT</CMPNAME>
+     <SCONAME>IV_PROCTY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Process Type</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT_PACK</CMPNAME>
+     <SCONAME>IT_GUID_HU</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Table of HU GUIDs</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT_PACK</CMPNAME>
+     <SCONAME>IV_BADI_APPL</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Handling Unit Application</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT_PACK</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>INIT_PACK</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>SAVE</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>

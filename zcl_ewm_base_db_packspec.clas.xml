@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_CLAS" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOCLASS>
+    <CLSNAME>ZCL_EWM_BASE_DB_PACKSPEC</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>DB class for: Pack spec</DESCRIPT>
+    <STATE>1</STATE>
+    <CLSCCINCL>X</CLSCCINCL>
+    <FIXPT>X</FIXPT>
+    <UNICODE>X</UNICODE>
+   </VSEOCLASS>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_BY_PS_HEAD</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Get Packing Specification by Header</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GET_PM_BY_PSGUID</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>GET Packing Material by PSGUID</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BY_PS_HEAD</CMPNAME>
+     <SCONAME>ET_ELEMENTGROUP</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>element group</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BY_PS_HEAD</CMPNAME>
+     <SCONAME>ET_PACKSPEC</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Packaging Specification (Complex)</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_BY_PS_HEAD</CMPNAME>
+     <SCONAME>IS_PS_HEADER_KEY</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>key for a packaging specification</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PM_BY_PSGUID</CMPNAME>
+     <SCONAME>EV_PMAT</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Packaging Material</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PM_BY_PSGUID</CMPNAME>
+     <SCONAME>EV_PMATID</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Product</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PM_BY_PSGUID</CMPNAME>
+     <SCONAME>IV_PACKSPEC</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Unique Internal ID for a Packaging Specification</DESCRIPT>
+    </SEOSUBCOTX>
+    <SEOSUBCOTX>
+     <CMPNAME>GET_PM_BY_PSGUID</CMPNAME>
+     <SCONAME>ZCX_EWM_BASE_DB</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Class for exceptions: DB Access Error</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
