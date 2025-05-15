@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_EWM_BASE_IDOC_C</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Contants for: IDOC</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_I_BAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Basic type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_MESTY_BAND</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Message Type</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_RCVPRT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Partner Type of Receiver</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SEG_BAND_C</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Segment type Header</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SEG_BAND_I</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Segment type Item (Stops)</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_SNDPRT</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Partner type of sender</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

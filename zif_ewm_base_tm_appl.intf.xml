@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_INTF" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <VSEOINTERF>
+    <CLSNAME>ZIF_EWM_BASE_TM_APPL</CLSNAME>
+    <LANGU>E</LANGU>
+    <DESCRIPT>Interface for: Z-Application Adapter</DESCRIPT>
+    <EXPOSURE>2</EXPOSURE>
+    <STATE>1</STATE>
+    <UNICODE>X</UNICODE>
+   </VSEOINTERF>
+   <DESCRIPTIONS>
+    <SEOCOMPOTX>
+     <CMPNAME>CLEANUP</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delete buffered data when /SCWM/CL_TM=&gt;CLEANUP is performed</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>CLEANUP_NOW</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Delete buffered data immediately</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_INDICATOR_BY_SYSTEM</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Determination Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_INDICATOR_CHANGEABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Determination Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_INDICATOR_CHANGE_MANUALLY</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Determination Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_INDICATOR_NOT_CHANGEABLE</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Value Determination Indicator</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GC_PARTY_ROLE_STPRTF</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Partner Role</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_CLEANUP_REASON</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Reason of Cleanup</DESCRIPT>
+    </SEOCOMPOTX>
+    <SEOCOMPOTX>
+     <CMPNAME>GV_CLEANUP_REG</CMPNAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Checkbox</DESCRIPT>
+    </SEOCOMPOTX>
+   </DESCRIPTIONS>
+   <DESCRIPTIONS_SUB>
+    <SEOSUBCOTX>
+     <CMPNAME>CLEANUP_NOW</CMPNAME>
+     <SCONAME>IV_LGNUM</SCONAME>
+     <LANGU>E</LANGU>
+     <DESCRIPT>Warehouse Number/Warehouse Complex</DESCRIPT>
+    </SEOSUBCOTX>
+   </DESCRIPTIONS_SUB>
+  </asx:values>
+ </asx:abap>
+</abapGit>
