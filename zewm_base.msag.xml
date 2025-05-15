@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZEWM_BASE</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>000</MSGNR>
+     <TEXT>&amp;1&amp;2&amp;3&amp;4</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>&amp;1 invalid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>&amp; IDocs sent to WCS system</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>No IDocs sent to WCS system</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Item already confirmed warehouse task &amp;1 is ignored</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>Confirmation for &amp;1 WT(s) begins</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>No open WTs to confirm</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>Workcenter &amp;1 no found.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>Repack Warehouse Process Type Empty</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>HU &amp;1 not Exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Batch of product &amp;1 not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>No values found for Parameter: &amp;1, Enchancement: &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>Delivery relevance check for automatic WO release begins.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>Delivery &amp;1, item &amp;2 picking status not relevant.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>HU &amp;1 not yet in Storage Type &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>Queue created for WO merge process: &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>Delivery &amp;1, item &amp;2 ignored. WhPrTy not relevant.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>Open qty found for Doc &amp;1, item &amp;2. Merge process not possible.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Open Picking WT found for Doc &amp;1, item &amp;2. Merge process not possible.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>No relevant items found for merge process.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>EAN for product &amp;1 not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Update begins for WT &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Fieldname &amp;1, Value &amp;2, Unit &amp;3</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>Error updating WT &amp;</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>Fieldname &amp;1, Value &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>End of update for WT &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>WT &amp;1 updated</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

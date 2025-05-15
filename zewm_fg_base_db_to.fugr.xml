@@ -1,0 +1,404 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>Base Function group</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZEWM_FG_BASE_DB_TOF01</SOBJ_NAME>
+    <SOBJ_NAME>LZEWM_FG_BASE_DB_TOTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZEWM_FG_BASE_DB_TO</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZEWM_FM_BASE_TO_CHANGE_ATT</FUNCNAME>
+     <SHORT_TEXT>Changing Warehouse Task Attributes</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_SUBST</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/RL03TSUBST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LOG_INIT</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>XFELD</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_QNAME</PARAMETER>
+       <DEFAULT>SY-UNAME</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>UNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_SIMULATE</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/SIMULATE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UPDATE_TASK</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/RL03AVERBU</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COMMIT_WORK</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/RL03ACOMIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_CHANGE_ATT</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>/SCWM/TT_TO_CHANGE_ATT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <EXPORT>
+      <RSEXP>
+       <PARAMETER>ET_BAPIRET</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPIRETTAB</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_SEVERITY</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BAPI_MTYPE</TYP>
+      </RSEXP>
+      <RSEXP>
+       <PARAMETER>EV_LOGNR</PARAMETER>
+       <REFERENCE>X</REFERENCE>
+       <TYP>BALOGNR</TYP>
+      </RSEXP>
+     </EXPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Lagernummer</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_SUBST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Verhalten beim Stornieren von Positionen für Fremdsysteme</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LOG_INIT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>X = Log initialisieren; &apos; &apos; = Log beibehalten</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_QNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Benutzer, der die Quittierung durchführt</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_SIMULATE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kennzeichen: nur Simulation - keine Fortschreibung auf DB</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UPDATE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kennzeichen ob Fortschreibung über Verbucher</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COMMIT_WORK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Kennzeichen, ob COMMIT WORK im Funktionsbaustein</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CHANGE_ATT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabelle Positionsfelder Transportauftrag für Quittierung</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>ET_BAPIRET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Tabelle mit BAPI Return Informationen</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_SEVERITY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Meldungstyp: S Success, E Error, W Warning, I Info, A Abort</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>EV_LOGNR</PARAMETER>
+       <KIND>P</KIND>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+   <LONGTEXTS_ZEWM_FM_BASE_TO_CHANGE_ATT>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZEWM_FM_BASE_TO_CHANGE_ATT</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00015</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZEWM_FM_BASE_TO_CHANGE_ATT</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FUNCTIONALITY&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Mit dem Funktionsbaustein kann ein Transportauftrag oder einzelne</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Positionen eines Transportauftrags quittiert werden. Es ist auch</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>möglich, Lagereinheiten bei Blocklagerentnahmen zurückzumelden oder</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Nullkontrolle durchzuführen. Nähere Informationen können der</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Detaildokumentation der einzelnen Parameter entnommen werden.  Die</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>übergebenen Parameter werden zunächst einer Plausibilitätsprüfung</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>unterzogen. Danach erfolgt die eigentliche Quittierung.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;EXAMPLE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;HINTS&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;FURTHER_SOURCES_OF_INF&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Im Wesentlichen verhält sich der Funktionsbaustein wie die Transaktion</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>zum Quittieren eines Transportauftrags. Falls die Detaildokumentation</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>einzelner Parameter nicht aussreicht, kann man sich mit F1 auf den</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Feldern in dieser Transaktion behelfen.</TDLINE>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZEWM_FM_BASE_TO_CHANGE_ATT    IV_COMMIT_WORK</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00007</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZEWM_FM_BASE_TO_CHANGE_ATT    IV_COMMIT_WORK</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Wenn I_COMMIT_WORK gesetzt ist, erfolgt der COMMIT WORK innerhalb des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionsbausteins, sonst ist der Aufrufer für den COMMIT</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>verantwortlich.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE MM_WM_COMMIT</TDLINE>
+      </TLINE>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;RANGE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;DEFAULT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZEWM_FM_BASE_TO_CHANGE_ATT    IV_QNAME</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZEWM_FM_BASE_TO_CHANGE_ATT    IV_QNAME</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Der übergebene Benutzer wird als Veranlassender im jeweiligen Beleg</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>hinterlegt. Alle Berechtigungen werden jedoch für den ausführenden des</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>Funktionsbausteins geprüft und nicht gegen den übergebenen Benutzer.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;RANGE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;DEFAULT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+    <item>
+     <DOKIL>
+      <ID>FU</ID>
+      <OBJECT>ZEWM_FM_BASE_TO_CHANGE_ATT    IV_UPDATE_TASK</OBJECT>
+      <LANGU>D</LANGU>
+      <TYP>T</TYP>
+      <VERSION>0002</VERSION>
+      <MASTERLANG>X</MASTERLANG>
+      <TXTLINES>00006</TXTLINES>
+      <DOKSTATE>A</DOKSTATE>
+     </DOKIL>
+     <HEAD>
+      <TDOBJECT>DOKU</TDOBJECT>
+      <TDNAME>ZEWM_FM_BASE_TO_CHANGE_ATT    IV_UPDATE_TASK</TDNAME>
+      <TDID>FU</TDID>
+      <TDSPRAS>D</TDSPRAS>
+      <TDFORM>S_DOCU_SHOW</TDFORM>
+      <TDSTYLE>S_DOCUS1</TDSTYLE>
+      <TDVERSION>00002</TDVERSION>
+      <TDLINESIZE>072</TDLINESIZE>
+     </HEAD>
+     <LINES>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;MEANING&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+       <TDLINE>Wenn I_UPDATE_TASK gesetzt ist, erfolgt die Fortschreibung der Daten</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDLINE>asynchron über den Verbucher, sonst direkt online.</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>/:</TDFORMAT>
+       <TDLINE>INCLUDE MM_WM_COMMIT</TDLINE>
+      </TLINE>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE/>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;RANGE&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>U4</TDFORMAT>
+       <TDLINE>&amp;DEFAULT&amp;</TDLINE>
+      </TLINE>
+      <TLINE>
+       <TDFORMAT>AS</TDFORMAT>
+      </TLINE>
+     </LINES>
+    </item>
+   </LONGTEXTS_ZEWM_FM_BASE_TO_CHANGE_ATT>
+  </asx:values>
+ </asx:abap>
+</abapGit>

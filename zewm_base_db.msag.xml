@@ -1,0 +1,492 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_MSAG" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <T100A>
+    <ARBGB>ZEWM_BASE_DB</ARBGB>
+    <MASTERLANG>E</MASTERLANG>
+   </T100A>
+   <T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>001</MSGNR>
+     <TEXT>Product &amp;1 not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>002</MSGNR>
+     <TEXT>Product is not a packaging material</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>003</MSGNR>
+     <TEXT>Product (GUID &amp;1) not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>004</MSGNR>
+     <TEXT>Error initializing WM packing</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>005</MSGNR>
+     <TEXT>NO HU&apos;s assigned to who&apos;s</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>006</MSGNR>
+     <TEXT>Error on Assign HU to WHO</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>007</MSGNR>
+     <TEXT>No Who found (&amp;1, &amp;2, &amp;3, &amp;4)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>008</MSGNR>
+     <TEXT>CL_WM_PACKING Packaging framework could not be initialized</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>009</MSGNR>
+     <TEXT>Creation of HU &amp;1 failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>010</MSGNR>
+     <TEXT>Importing parameter invalid</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>011</MSGNR>
+     <TEXT>Handling Unit not found (access by GUID &amp;1)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>012</MSGNR>
+     <TEXT>HU &amp;1 not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>013</MSGNR>
+     <TEXT>This HU is empty</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>014</MSGNR>
+     <TEXT>No Child Who assigned to Who &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>015</MSGNR>
+     <TEXT>No Who found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>016</MSGNR>
+     <TEXT>FDO Document &amp;1 Not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>017</MSGNR>
+     <TEXT>Ref. Document &amp;1 already Inserted for &amp;2.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>018</MSGNR>
+     <TEXT>Not possible to Insert Ref Doc &amp;1 to Document &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>019</MSGNR>
+     <TEXT>Parameter &amp;1 inconsistent, Multiple field selection</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>020</MSGNR>
+     <TEXT>Parameter &amp;1 inconsistent, field not mapped to table values</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>021</MSGNR>
+     <TEXT>Parameter &amp;1 inconsistent, without field selection</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>022</MSGNR>
+     <TEXT>Parameter &amp;1 without data for field &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>023</MSGNR>
+     <TEXT>No values found for parameter &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>024</MSGNR>
+     <TEXT>More than one value for parameter &amp;1 found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>025</MSGNR>
+     <TEXT>Assignment of HU &amp;1 to TU &amp;2 failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>026</MSGNR>
+     <TEXT>Creation of the transportation unit failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>027</MSGNR>
+     <TEXT>Business Manager for Shipping &amp; Receiving could not be initialized</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>028</MSGNR>
+     <TEXT>Status &quot;Loading started&quot; could not be set for TU</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>029</MSGNR>
+     <TEXT>Goods issue for TU s already posted. Status could not be set</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>030</MSGNR>
+     <TEXT>Transportation Unit &amp;1 does not exist</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>031</MSGNR>
+     <TEXT>S&amp;R data for TU &amp;1 could not be read</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>032</MSGNR>
+     <TEXT>Status &quot;Loading finished&quot; could not be set for TU</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>033</MSGNR>
+     <TEXT>Status &quot;Departure from Checkpoint&quot; could not be set for TU</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>034</MSGNR>
+     <TEXT>Business Objectfor TU could not be retrieved</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>035</MSGNR>
+     <TEXT>TU status could not be determined</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>036</MSGNR>
+     <TEXT>Loading for TU is active. Movement to checkpoint not possible</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>037</MSGNR>
+     <TEXT>Check-in for TU &amp;1 failed</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>038</MSGNR>
+     <TEXT>Transport Unit &amp;1 not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>039</MSGNR>
+     <TEXT>Transport Unit &amp;1 not found (ambiguous for activity)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>040</MSGNR>
+     <TEXT>Transport Unit &amp;1 not found (ambiguous for activity)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>041</MSGNR>
+     <TEXT>Transport Unit &amp;1 w/o Handling Units</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>042</MSGNR>
+     <TEXT>Transport Unit &amp;1 w/o Handling Units (DB)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>043</MSGNR>
+     <TEXT>No Transport Unit Activity found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>044</MSGNR>
+     <TEXT>HU &amp;1 was not Unassign to TU</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>045</MSGNR>
+     <TEXT>No key found for Transport Unit &amp;1 in Warehouse &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>046</MSGNR>
+     <TEXT>No active activity for TU &amp;1 found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>047</MSGNR>
+     <TEXT>HU &amp;1 w/o Ticket document</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>048</MSGNR>
+     <TEXT>Handling Unit &amp;1 w/o Ticket document reference (Buffer)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>049</MSGNR>
+     <TEXT>No Handling Units found for this criterion</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>050</MSGNR>
+     <TEXT>HU Identification type &amp;1 for given HU not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>051</MSGNR>
+     <TEXT>Status &amp;1 is not assigned to this Handling Unit</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>052</MSGNR>
+     <TEXT>No deliveries found for reference document &amp;1 &amp;2</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>053</MSGNR>
+     <TEXT>No warehouse task found to selection criteria</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>054</MSGNR>
+     <TEXT>Reference &amp;1 not assigned to a Handling Unit</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>055</MSGNR>
+     <TEXT>No Handling Units found for this criterion</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>056</MSGNR>
+     <TEXT>CL_WM_PACKING Packaging framework could not be initialized</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>057</MSGNR>
+     <TEXT>HU &amp;1 w/o Backorder</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>058</MSGNR>
+     <TEXT>Couldn&apos;t found Process Category &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>059</MSGNR>
+     <TEXT>Empty Field(s)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>060</MSGNR>
+     <TEXT>No Found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>061</MSGNR>
+     <TEXT>DATA not Found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>062</MSGNR>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>063</MSGNR>
+     <TEXT>HU &amp;1 w/o confirmed warehouse tasks</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>064</MSGNR>
+     <TEXT>HU &amp;1 has no open Warehouse Task</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>065</MSGNR>
+     <TEXT>No open warehouse tasks were found to warehouse orders.</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>066</MSGNR>
+     <TEXT>Replace of HU was not possible to perform</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>067</MSGNR>
+     <TEXT>Work Center &amp;1 not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>068</MSGNR>
+     <TEXT>Legs of route could not be determined</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>069</MSGNR>
+     <TEXT>No stops were found for the legs of the desired route</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>070</MSGNR>
+     <TEXT>Route &amp;1 w/o legs</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>071</MSGNR>
+     <TEXT>Route &amp;1 w/o stops</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>072</MSGNR>
+     <TEXT>CD route could not be determined</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>073</MSGNR>
+     <TEXT>Route &amp;1 is not maintained (check validity period)</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>074</MSGNR>
+     <TEXT>No stores assigned to route &amp;1</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>075</MSGNR>
+     <TEXT>Route &amp;1 is not unique</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>076</MSGNR>
+     <TEXT>Mat. Guid for Pack. Mat. &amp;1 was not found</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>077</MSGNR>
+     <TEXT>HU &amp;1 does not exists</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>078</MSGNR>
+     <TEXT>Pack. Mat. &amp;1 was not found in the DB</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>079</MSGNR>
+     <TEXT>Header of HU &amp;1 could not be modified</TEXT>
+    </T100>
+    <T100>
+     <SPRSL>E</SPRSL>
+     <ARBGB>ZEWM_BASE_DB</ARBGB>
+     <MSGNR>080</MSGNR>
+     <TEXT>WO &amp;1 couln´t be read/blocked. Merge not possible</TEXT>
+    </T100>
+   </T100>
+  </asx:values>
+ </asx:abap>
+</abapGit>

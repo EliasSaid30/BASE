@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_DTEL" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <DD04V>
+    <ROLLNAME>ZEWM_DE_BASE_PARAMS_F_VLBER</ROLLNAME>
+    <DDLANGUAGE>E</DDLANGUAGE>
+    <DOMNAME>XFELD</DOMNAME>
+    <HEADLEN>55</HEADLEN>
+    <SCRLEN1>10</SCRLEN1>
+    <SCRLEN2>20</SCRLEN2>
+    <SCRLEN3>40</SCRLEN3>
+    <DDTEXT>Parameters Flag: Source storage section</DDTEXT>
+    <REPTEXT>FG. Src Sec</REPTEXT>
+    <SCRTEXT_S>FgSrcStSec</SCRTEXT_S>
+    <SCRTEXT_M>Fg. Src.stor.sectn</SCRTEXT_M>
+    <SCRTEXT_L>Flag Source stor.section</SCRTEXT_L>
+    <DTELMASTER>E</DTELMASTER>
+    <REFKIND>D</REFKIND>
+   </DD04V>
+   <I18N_LANGS>
+    <LANGU>S</LANGU>
+   </I18N_LANGS>
+   <DD04_TEXTS>
+    <item>
+     <DDLANGUAGE>S</DDLANGUAGE>
+     <DDTEXT>Flag parametro: sección origen</DDTEXT>
+     <REPTEXT>Fl Sec Origen</REPTEXT>
+     <SCRTEXT_S>Fl.Sec Ori</SCRTEXT_S>
+     <SCRTEXT_M>Fl Sec Orig</SCRTEXT_M>
+     <SCRTEXT_L>Fl Sec Origen</SCRTEXT_L>
+    </item>
+   </DD04_TEXTS>
+  </asx:values>
+ </asx:abap>
+</abapGit>

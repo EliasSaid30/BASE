@@ -1,0 +1,447 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<abapGit version="v1.0.0" serializer="LCL_OBJECT_FUGR" serializer_version="v1.0.0">
+ <asx:abap xmlns:asx="http://www.sap.com/abapxml" version="1.0">
+  <asx:values>
+   <AREAT>SAP Functions enabled for qRFC access</AREAT>
+   <INCLUDES>
+    <SOBJ_NAME>LZEWM_FG_BASE_QRFCF01</SOBJ_NAME>
+    <SOBJ_NAME>LZEWM_FG_BASE_QRFCF02</SOBJ_NAME>
+    <SOBJ_NAME>LZEWM_FG_BASE_QRFCTOP</SOBJ_NAME>
+    <SOBJ_NAME>SAPLZEWM_FG_BASE_QRFC</SOBJ_NAME>
+   </INCLUDES>
+   <FUNCTIONS>
+    <item>
+     <FUNCNAME>ZEWM_BASE_FM_QRFC_ADJUST_CAT</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>FM: Adjustment Surplus CAT</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <TYP>/SCWM/S_RFC_QUEUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_ORDIM_C</PARAMETER>
+       <TYP>/SCWM/TT_ORDIM_C</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_STOCK_TYPE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/LIME/STOCK_CATEGORY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PROCTY</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_PROCTY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_REASON</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_REASON</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_OWNER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_OWNER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ENTITLED</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_ENTITLED</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RFC Queue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ORDIM_C</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table: Warehouse Tasks Confirmed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_STOCK_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Stock Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PROCTY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Process Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_REASON</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reason for Movements in the Warehouse</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_OWNER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Owner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ENTITLED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Party Entitled to Dispose</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEWM_BASE_FM_QRFC_POST_CHNG</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>FM: Adjustment to Posting</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <TYP>/SCWM/S_RFC_QUEUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_ORDIM_C</PARAMETER>
+       <TYP>/SCWM/TT_ORDIM_C</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_STOCK_TYPE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/LIME/STOCK_CATEGORY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PROCTY</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_PROCTY</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_REASON</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_REASON</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_OWNER</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_OWNER</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_ENTITLED</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_ENTITLED</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RFC Queue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_ORDIM_C</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table: Warehouse Tasks Confirmed</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_STOCK_TYPE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Stock Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PROCTY</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Process Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_REASON</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Reason for Movements in the Warehouse</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_OWNER</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Owner</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_ENTITLED</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Party Entitled to Dispose</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEWM_FM_BASE_QRFC_CLOSE_TU</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>FM: Close TU in RF</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <TYP>/SCWM/S_RFC_QUEUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_TU_NUM</PARAMETER>
+       <TYP>/SCWM/DE_TU_NUM</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RFC Queue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_TU_NUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Internal Number of Transportation Unit</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEWM_FM_BASE_QRFC_MERGE_HU_WO</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Merge WO from different HU</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <TYP>/SCWM/S_RFC_QUEUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WCR</PARAMETER>
+       <TYP>/SCWM/DE_WCR</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGTYP</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/LGTYP</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_HU</PARAMETER>
+       <TYP>/SCWM/TT_HUHDR_INT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RFC Queue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WCR</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Order Creation Rule</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGTYP</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Storage Type</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_HU</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table Type for HU Headers in the Internal Structure</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEWM_FM_BASE_QRFC_TO_CONFIRM</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Confirm warehouse task(s) in separate qRFC unit</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <TYP>/SCWM/S_RFC_QUEUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_SUBST</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/RL03TSUBST</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_QNAME</PARAMETER>
+       <DEFAULT>SY-UNAME</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>UNAME</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_CRETO</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_CRETO</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_WTCODE</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_WTCODE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_UPDATE_TASK</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/RL03AVERBU</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_COMMIT_WORK</PARAMETER>
+       <DEFAULT>&apos;X&apos;</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/RL03ACOMIT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_PROCESSOR_DET</PARAMETER>
+       <DEFAULT>SPACE</DEFAULT>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/DE_CONFIRM_RF</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_CONF</PARAMETER>
+       <TYP>/SCWM/TO_CONF_TT</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_CONF_EXC</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/TT_CONF_EXC</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_CONF_SERID</PARAMETER>
+       <OPTIONAL>X</OPTIONAL>
+       <TYP>/SCWM/TT_CONF_SERID</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RFC Queue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_SUBST</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Behavior During Cancellation of Items for Subsystems</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_QNAME</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>User Name</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_CRETO</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Creation of a Successor Warehouse Task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_WTCODE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Calling Application/Special Function for WT Creation/Conf.</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_UPDATE_TASK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Execute Posting Asynchronously Via Update Task</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_COMMIT_WORK</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Processing with COMMIT WORK</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_PROCESSOR_DET</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Determine Processor from System User (RF, Work Center)</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CONF</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table: Item Fields for Transfer Order for Confirmation</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CONF_EXC</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Exception Codes for WT Confirmation Item</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CONF_SERID</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Serial Numbers for WT Confirmation Items</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+    <item>
+     <FUNCNAME>ZEWM_FM_BASE_QRFC_TO_UPDATE</FUNCNAME>
+     <REMOTE_CALL>R</REMOTE_CALL>
+     <SHORT_TEXT>Update open warehouse task(s)</SHORT_TEXT>
+     <IMPORT>
+      <RSIMP>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <TYP>/SCWM/S_RFC_QUEUE</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <TYP>/SCWM/LGNUM</TYP>
+      </RSIMP>
+      <RSIMP>
+       <PARAMETER>IT_CHANGE_ATT</PARAMETER>
+       <TYP>/SCWM/TT_TO_CHANGE_ATT_INT</TYP>
+      </RSIMP>
+     </IMPORT>
+     <DOCUMENTATION>
+      <RSFDO>
+       <PARAMETER>IS_RFC_QUEUE</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>RFC Queue</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IV_LGNUM</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Warehouse Number/Warehouse Complex</STEXT>
+      </RSFDO>
+      <RSFDO>
+       <PARAMETER>IT_CHANGE_ATT</PARAMETER>
+       <KIND>P</KIND>
+       <STEXT>Table: Warehouse Tasks Open, Internal</STEXT>
+      </RSFDO>
+     </DOCUMENTATION>
+    </item>
+   </FUNCTIONS>
+  </asx:values>
+ </asx:abap>
+</abapGit>
